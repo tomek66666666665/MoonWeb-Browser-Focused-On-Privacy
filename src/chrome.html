@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MoonWeb chrome</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="tabrow" class="tabrow">
+    <div class="brand"><span class="mark">☾</span></div>
+    <div id="tabs" class="tabs"></div>
+    <button id="newtab" class="newtab" title="New tab">+</button>
+    <div class="drag-fill"></div>
+  </div>
+
+  <div id="toolrow" class="toolrow">
+    <div class="navbtns">
+      <button id="back" class="ibtn" title="Back">‹</button>
+      <button id="fwd" class="ibtn" title="Forward">›</button>
+      <button id="reload" class="ibtn" title="Reload">⟳</button>
+      <button id="homebtn" class="ibtn" title="Home">⌂</button>
+    </div>
+    <div class="addressbar">
+      <span id="addrlock" class="lock">🔒</span>
+      <input id="addr" placeholder="Search or enter address" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="rightbtns">
+      <button id="vpnbtn" class="pill off"><span class="dot"></span><span id="vpnlabel">VPN Off</span></button>
+      <button id="menubtn" class="ibtn" title="Menu">⋯</button>
+    </div>
+  </div>
+
+  <div id="menu" class="menu hidden">
+    <div class="menu-section">
+      <div class="menu-title">Default search engine</div>
+      <div id="menu-engines" class="menu-engines"></div>
+    </div>
+    <div class="menu-section">
+      <button id="menu-ext" class="menu-item">Load an extension…</button>
+      <button id="menu-vpnconfig" class="menu-item">Choose VPN config…</button>
+      <button id="menu-vpninstall" class="menu-item">Get WireGuard (free)</button>
+      <button id="menu-about" class="menu-item">What MoonWeb blocks</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="chrome.js"></script>
+</body>
+</html>

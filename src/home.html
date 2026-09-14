@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>New Tab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+  <main class="home">
+    <div class="tiny">PRIVATE SEARCH</div>
+    <h1>MoonWeb</h1>
+    <p>Search quietly. Browse freely.</p>
+    <div class="search">
+      <span>⌕</span>
+      <input id="q" placeholder="Search the web" autofocus>
+      <button id="engine"><span id="en">DuckDuckGo</span><i>⌄</i></button>
+      <button id="go">→</button>
+    </div>
+    <div id="engines" class="dropdown"></div>
+    <div class="privacy-row">
+      <span class="dot"></span> Ads &amp; known trackers blocked on this page
+      <button id="changeengine" class="linklike">change search engine</button>
+    </div>
+  </main>
+
+  <div id="onboard" class="onboard hidden">
+    <div class="onboard-card">
+      <div class="tiny">FIRST THINGS FIRST</div>
+      <h2>Choose your search engine</h2>
+      <p class="ob-sub">You can change this anytime from the home page or the ⋯ menu.</p>
+      <div id="ob-list" class="ob-list"></div>
+    </div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
